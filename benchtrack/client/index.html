@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BenchTrack</title>
+<style>
+:root{--bg:#e8ebee;--panel:#f7f8f9;--ink:#15191d;--mute:#5d6770;--line:#c9d0d6;--red:#c4202f;--blue:#1d4f91}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,sans-serif}
+h1,h2,.big{font-family:"Arial Narrow","Roboto Condensed",Impact,sans-serif;font-stretch:condensed;letter-spacing:.01em}
+header{background:var(--ink);color:#fff;padding:14px 24px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+header h1{margin:0;font-size:26px}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav button{background:none;border:0;color:#aab3bb;padding:8px 12px;font:inherit;cursor:pointer;border-bottom:3px solid transparent}
+nav button:hover,nav button:focus-visible{color:#fff}
+nav button.on{color:#fff;border-bottom-color:var(--red)}
+main{max-width:980px;margin:0 auto;padding:24px 16px 64px}
+.panel{background:var(--panel);border:1px solid var(--line);padding:16px;margin-bottom:16px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+.stat{border-left:4px solid var(--red);background:var(--panel);padding:8px 12px}
+.stat .big{font-size:38px;line-height:1.1}.stat small{color:var(--mute)}
+label{display:flex;flex-direction:column;font-size:13px;color:var(--mute);gap:2px}
+input,select,textarea{font:inherit;padding:6px 8px;border:1px solid var(--line);background:#fff;color:var(--ink)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin-bottom:10px}
+button.act{background:var(--ink);color:#fff;border:0;padding:8px 16px;font:inherit;cursor:pointer}
+button.act:hover{background:var(--red)}button.link{background:none;border:0;color:var(--blue);cursor:pointer;font:inherit}
+table{border-collapse:collapse;width:100%}td,th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left}
+.pr{background:#fff3cd;border:1px solid #e6c24f;padding:10px 14px;margin-bottom:12px}
+.err{color:var(--red)}.mute{color:var(--mute)}
+@media(prefers-reduced-motion:no-preference){button{transition:background .15s}}
+</style></head>
+<body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html>
