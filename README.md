@@ -1,5 +1,5 @@
 BenchTrack
-A bench-press-specific training log, analytics dashboard and program builder. React + Node/Express + PostgreSQL, with unit tests, Docker and GitHub Actions CI.
+A bench-press-specific training log, analytics dashboard and program builder. React + Node/Express + PostgreSQL, with unit tests, Docker and GitHub Actions CI. Next feature to implement in next update: video analysis for bench press. 
 
 Features
 Log workouts (variation, grip, bodyweight, RPE, warm-ups, notes); edit/delete via API, delete in UI
